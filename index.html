@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나를 소개하는 웹 지도</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <p class="badge">중학교 사회 교사 · 여수</p>
+    <h1>🗺️ 나를 소개하는 지도</h1>
+    <p class="subtitle">여수에서 아이들과 함께 배우고, 공주에서 쌓은 배움의 뿌리를 이어갑니다</p>
+  </header>
+
+  <main>
+    <div id="map"></div>
+
+    <aside class="profile">
+      <section class="profile-card">
+        <h2>👋 안녕하세요</h2>
+        <p>저는 <strong>여수</strong>에서 일하는 <strong>중학교 사회 교사</strong>입니다. 역사와 지리, 시민 교육을 가르치며 학생들과 함께 세상을 탐구하고 있어요.</p>
+      </section>
+
+      <section class="legend">
+        <h2>나와 관련된 장소</h2>
+        <ul id="place-list"></ul>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <p>마커를 클릭하면 장소 소개가 팝업으로 표시됩니다</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
